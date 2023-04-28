@@ -12,7 +12,7 @@ $GraphAPIAppName = "Microsoft Graph"
 $ApiServicePrincipalFilter = "displayName eq '$($GraphAPIAppName)'"
 
 # Scopes needed for the managed identity (Add other scopes if needed)
-$Scopes = @("Device.ReadWrite.All","User.Read.All")
+$Scopes = @("Device.ReadWrite.All","User.Read.All","DeviceManagementServiceConfig.ReadWrite.All")
 
 # Connect to MG Graph - scopes must be consented the first time you run this. 
 # Connect with Global Administrator
