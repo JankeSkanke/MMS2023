@@ -16,5 +16,7 @@ foreach ($user in $users){
     #Update-MgUser -UserId $userID -BodyParameter $hiredate
     Get-MgUser -UserId $userId | Select-Object DisplayName, EmployeeHireDate
 }
-
-
+$leavedate = @{
+    employeeLeaveDateTime = [System.DateTime]::Parse("2023-05-10T01:00:00Z")
+}
+Update-MgUser -UserId $userID -BodyParameter $leavedate
