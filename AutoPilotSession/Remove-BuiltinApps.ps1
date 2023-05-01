@@ -119,7 +119,7 @@ Begin {
     
     # List of Appx Provisioned Packages to Remove for All Users
     $AppsToRemoveURL = $null
-    $AppsToRemoveURL = "https://stintune2048.blob.core.windows.net/removebuiltinapp/Applist_w11.txt"
+    $AppsToRemoveURL = "YOUR SECRET URL"
     Write-LogEntry -Value "AppsToRemoveURL:$($AppsToRemoveURL)" -Severity 1
     
     #Attempt to obtain list of Apps to remove
